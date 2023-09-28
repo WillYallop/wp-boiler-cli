@@ -1,9 +1,11 @@
 export interface ConfigT {
   wordpress: {
     version: string;
+    dest: string;
   };
-  symLinks: {
+  symlinks: {
     source: string;
     target: string;
+    template?: string;
   }[];
 }

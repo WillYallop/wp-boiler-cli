@@ -12,9 +12,14 @@ const config = async () => {
     if (find.found && find.path) {
       const configUrl = pathToFileURL(find.path).href;
       const configModule = await import(configUrl);
+      const configRes = configModule.default;
+
       return {
-        ...C.CONFIG,
-        ...configModule.default,
+        wordpress: {
+          version: configRes.wordpress.version || C.CONFIG.wordpress.version,
+          dest: C.CONFIG.wordpress.dest,
+        },
+        symlinks: C.CONFIG.symlinks,
       };
     }
 

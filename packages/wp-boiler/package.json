@@ -1,18 +1,39 @@
 {
-  "name": "wp-boiler",
+  "name": "wp-boiler-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Quickly create and update a WordPress project whilst keeping the core WordPress installation separate.",
   "main": "./dist/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WillYallop/wp-boiler-cli"
+  },
+  "include": [
+    "dist/**/*",
+    "templates/**/*"
+  ],
   "scripts": {
     "dev": "tsc -w",
     "build": "tsc"
   },
   "bin": "./dist/index.js",
-  "keywords": [],
+  "keywords": [
+    "wordpress",
+    "boilerplate",
+    "cli"
+  ],
   "author": "William Yallop",
   "license": "MIT",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/fs-extra": "^11.0.2",
     "@types/node": "^20.7.1",
+    "@types/tar": "^6.1.6",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "fs-extra": "^11.1.1",
+    "tar": "^6.2.0"
   }
 }
