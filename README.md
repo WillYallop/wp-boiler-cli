@@ -4,7 +4,7 @@ The purpose of this CLI is to allow you to quickly create and update a WordPress
 
 ## Getting Started
 
-Run `npx wp-boiler` in the root of your project. This will create a `public_html` directory which, by default, installs the latest version of WordPress. The themes, plugins, and uploads directories will be deleted. Subsequently, symlinks will be created with their targets located in the `./wordpress` directory. The `wp-config.php` file will also be generated, symlinked, and populated with sample content.
+Run `npx wp-boiler-cli` in the root of your project. This will create a `public_html` directory which, by default, installs the latest version of WordPress. The themes, plugins, and uploads directories will be deleted. Subsequently, symlinks will be created with their targets located in the `./wordpress` directory. The `wp-config.php` file will also be generated, symlinked, and populated with sample content.
 
 Subsequent runs of `wp-boiler` will reinstall and initialise the symlinks. However, if the target files already exist, they will remain untouched. This allows you to upgrade the core WordPress installation without affecting your work.
 
