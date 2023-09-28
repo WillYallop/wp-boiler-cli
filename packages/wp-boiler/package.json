@@ -1,6 +1,6 @@
 {
   "name": "wp-boiler-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly create and update a WordPress project whilst keeping the core WordPress installation separate.",
   "main": "./dist/index.js",
   "type": "module",

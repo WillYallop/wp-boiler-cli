@@ -30,8 +30,6 @@ const findPath = (options: {
   const configExtensions = options.extensions;
 
   const search = (cwd: string): void => {
-    console.log(cwd);
-
     const files = fs.readdirSync(cwd);
     const configFiles = files.filter((file) => {
       const { name, ext } = path.parse(file);
